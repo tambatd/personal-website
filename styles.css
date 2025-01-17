@@ -75,12 +75,11 @@ pre {
   justify-content: center;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   .grid {
     position: fixed;
     bottom: 0;
-    right: 20px;
-    margin: 20px;
+    right: 30px;
   }
 }
 
