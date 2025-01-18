@@ -75,6 +75,11 @@ pre {
   justify-content: center;
 }
 
+.centerGrid {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (min-width: 600px) {
   .grid {
     position: fixed;
@@ -93,4 +98,22 @@ h3 {
 
 ul {
   margin-top: 5px;
+}
+
+.fade-text {
+  display: block;
+}
+
+.fade-char {
+  transition: opacity 0.3s ease;
+}
+
+.fade-char:hover {
+  opacity: 0;
+}
+
+.fade-char:hover::after {
+  content: attr(data-alt);
+  opacity: 1;
+  position: absolute;
 }

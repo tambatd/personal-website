@@ -6,6 +6,8 @@
     <title>Devendra ❀</title>
   </head>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="icon.jpg" />
+
   <body>
     <div class="hi">
       <h1>Hey, I'm Devendra ❀</h1>
@@ -31,14 +33,14 @@
       <pre>
             ____
           _/|_|_\___
-     ~~  \  ;  -     \
+     ~   \  ;  -     \
       ~~  ` (_)--(_)`      
       </pre>
     </marquee>
     <a href="./index.html">Index</a> ||
-    <a href="./layer2/inspirations.html">Inspirations</a> ||
+    <a href="./layer2/lately.html">Lately</a> ||
     <a href="./layer2/resources.html">Resources</a> ||
-    <a href="./layer2/lately.html">Lately</a>
+    <a href="./layer2/inspirations.html">Inspirations</a>
 
     <div class="grid">
       <pre>
@@ -57,6 +59,21 @@
                - Genesis 1
       </pre>
     </div>
+
+    <script>
+      const waves = document.querySelectorAll("pre");
+      let isDouble = false;
+
+      setInterval(() => {
+        waves.forEach((wave) => {
+          const lines = wave.innerHTML.split("\n");
+          lines[2] = lines[2].replace(/~+\s+/, isDouble ? "~~  " : "~   ");
+          lines[3] = lines[3].replace(/~+\s+/, isDouble ? "~   " : "~~  ");
+          wave.innerHTML = lines.join("\n");
+        });
+        isDouble = !isDouble;
+      }, 500);
+    </script>
   </body>
 </html>
 <!--
