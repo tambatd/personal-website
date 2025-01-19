@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devendra ❀</title>
+  </head>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="./i.ico" />
+
+  <body>
+    <div class="hi">
+      <h1>NULLPTR EXCEPTION</h1>
+      <p>
+        the following are random thoughts i've accrued by existing over the
+        years. I'm forgoing a lot of "design" on this portion of the site.
+      </p>
+      <ul>
+        <li>
+          fall in love with something man, pursue an art form, find the upper
+          bounds of your abilities, fall in love with the world and everything
+          everyone's created, work tirelessly to the point of insanity to create
+          something, anything, that when someone looks at, they also fall in
+          love
+        </li>
+        <li>
+          this world we exist in, exists for one sole reason. individuals all
+          across the world had things they cared about so much, that they wanted
+          to share that beauty with others. the moment you stop doing that is
+          the moment humanity’s beauty dies, and humanity with it
+        </li>
+        <li>
+          the day after a loved one's death is fascinating, just an empty
+          sickness in ones stomach, akin to what i'd imagine the opposite of the
+          feeling of "butterflies" to be. i wonder if the opposite of death is
+          love, and if death means the end, does love (creation) signal the
+          beginning
+        </li>
+        <li>
+          my mom often asks why i'm not friends with the other asian kids in my
+          religious community, and earnestly it's that every time i interact
+          with them, they're all playing incredibly low-stakes status games and
+          making me constantly prove that i deserve to exist
+        </li>
+        <li>
+          freshman year of college i cold emailed 100+ PlayStation designers
+          asking for help on how not only to be a better designer but also how
+          to enter the industry, and only one person emailed me back, and he's
+          now my design mentor and one of my closest friends<br /><br />in life,
+          a lot of people aren't going to take bets on you, but there will be
+          those who do, and you should double down on them and hold them tight,
+          and ignore everything else
+        </li>
+        <li>
+          the tech sphere is constantly addicted to quantifying their
+          intelligence in comparison to others, and at all points in these
+          conversations these discussions are fundamentally useless, because the
+          only thing that matters is just doing things<br /><br />i've seen
+          people several magnitudes smarter than me dedicate their life to
+          playing nyt minigames all day and working in sales at google
+        </li>
+        <li>
+          i look around at all the incredibly talented engineers i'm working
+          with on a day to day, and most of their backgrounds are so varied.
+          part of me wonders if what truly separates mediocre engineers from
+          great ones isn't intelligence, but willingness to be in the trenches
+          learning
+        </li>
+        <li>
+          my roommate went to a party, brought back a girl (they’re currently
+          making out) and I spent the past 8 hours looking at muji designs
+        </li>
+        <li>
+          i have a hard time understanding the idea that you learn way more by
+          working at a startup than at a FAANG. feel like i've learnt more abt
+          software engineering and design working at FAANG over the past 3
+          months, than my time working at a startup for over a year
+        </li>
+        <li>
+          some of my favorite design projects are ones that are meant to be
+          viewed by only one person and no one else. there's something innately
+          special in crafting something for just one person to see, that
+          everything was designed around them
+          <br /><br />
+          we are only as beautiful as the individual love we give one-another
+        </li>
+        <li>
+          the idea that quality art is produced by those who are depressed or
+          mentally ill in some way is true to an extent, but i think it’s truth
+          lies in the fact that art for a lot of these people exists as the one
+          sole thing that makes them feel happy/alive to an extent
+        </li>
+        <li>
+          you shouldn’t be able to viciously critique art unless you yourself
+          have created an art pieces that’s been viewed by others
+        </li>
+        <li>
+          as an artist, you have the moral duty to create more art. i’ll see a
+          tweet along the lines of, “i’m giving up on drawing” and earnestly,
+          give up. let this world be polluted with low quality artwork, let the
+          children consume the worst, all because you decided to give up.
+        </li>
+      </ul>
+    </div>
+
+    <marquee direction="right">
+      <pre>
+            ____
+          _/|_|_\___
+     ~   \  ;  -     \
+      ~~  ` (_)--(_)`      
+      </pre>
+    </marquee>
+    <a href="./index.html">Index</a> ||
+    <a href="./layer2/lately.html">Lately</a> ||
+    <a href="./layer2/resources.html">Resources</a> ||
+    <a href="./layer2/inspirations.html">Inspirations</a>
+
+    <div class="grid">
+      <pre>
+"We are such stuff as dreams are made on; 
+and our little life is rounded with a sleep."
+
+                        - Act IV The Tempest
+      </pre>
+    </div>
+
+    <script>
+      const waves = document.querySelectorAll("pre");
+      let isDouble = false;
+
+      setInterval(() => {
+        waves.forEach((wave) => {
+          const lines = wave.innerHTML.split("\n");
+          lines[2] = lines[2].replace(/~+\s+/, isDouble ? "~~  " : "~   ");
+          lines[3] = lines[3].replace(/~+\s+/, isDouble ? "~   " : "~~  ");
+          wave.innerHTML = lines.join("\n");
+        });
+        isDouble = !isDouble;
+      }, 500);
+    </script>
+  </body>
+</html>
+<!--
+(    ~    )    ~    (    ~
+
+~    )    ~    (    ~    )
+
+)    ~    (    ~    )    ~
+
+~    (    ~    )    ~    )
+
+(    ~    )    ~    (    ~
+
+~    )    ~    (    ~    )
+-->
+<!--
+The font used on this site is "Nay Aug," by the lovely Alex Tomlinson: https://alextomlinson.com/
+You can find some of his other fonts here: https://fontsinuse.com/contributors/14002/secretarydesk
+-->
