@@ -7,7 +7,7 @@
   </head>
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/x-icon" href="./i.ico" />
-
+  <script src="CarMarquee.js"></script>
   <body>
     <div style="position: fixed; top: 10px; right: 10px">
       ⚘ <span style="display: none">271 kb</span>
@@ -39,14 +39,7 @@
       <p>Previous I worked at Tesla as a Creative Technologist</p>
     </div>
 
-    <marquee direction="right">
-      <pre>
-            ____
-          _/|_|_\___
-     ~   \  ;  -     \
-      ~~  ` (_)--(_)`      
-      </pre>
-    </marquee>
+    <car-marquee></car-marquee>
     <div style="padding-bottom: 5px">
       <a href="./index.html">Index</a> ||
       <a href="./layer2/lately.html">Lately</a> ||
@@ -79,21 +72,6 @@
         >
       </a>
     </div>
-
-    <script>
-      const waves = document.querySelectorAll("pre");
-      let isDouble = false;
-
-      setInterval(() => {
-        waves.forEach((wave) => {
-          const lines = wave.innerHTML.split("\n");
-          lines[2] = lines[2].replace(/~+\s+/, isDouble ? "~~  " : "~   ");
-          lines[3] = lines[3].replace(/~+\s+/, isDouble ? "~   " : "~~  ");
-          wave.innerHTML = lines.join("\n");
-        });
-        isDouble = !isDouble;
-      }, 500);
-    </script>
   </body>
 </html>
 <!--

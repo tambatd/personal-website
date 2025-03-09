@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Devendra ❀</title>
   </head>
+  <script src="CarMarquee.js"></script>
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/x-icon" href="./i.ico" />
 
@@ -102,15 +103,7 @@
         </li>
       </ul>
     </div>
-
-    <marquee direction="right">
-      <pre>
-            ____
-          _/|_|_\___
-     ~   \  ;  -     \
-      ~~  ` (_)--(_)`      
-      </pre>
-    </marquee>
+    <car-marquee></car-marquee>
     <a href="./index.html">Index</a> ||
     <a href="./layer2/lately.html">Lately</a> ||
     <a href="./layer2/resources.html">Resources</a> ||
@@ -124,21 +117,6 @@ and our little life is rounded with a sleep."
                         - Act IV The Tempest
       </pre>
     </div>
-
-    <script>
-      const waves = document.querySelectorAll("pre");
-      let isDouble = false;
-
-      setInterval(() => {
-        waves.forEach((wave) => {
-          const lines = wave.innerHTML.split("\n");
-          lines[2] = lines[2].replace(/~+\s+/, isDouble ? "~~  " : "~   ");
-          lines[3] = lines[3].replace(/~+\s+/, isDouble ? "~   " : "~~  ");
-          wave.innerHTML = lines.join("\n");
-        });
-        isDouble = !isDouble;
-      }, 500);
-    </script>
   </body>
 </html>
 <!--
